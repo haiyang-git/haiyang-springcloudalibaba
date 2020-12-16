@@ -1,0 +1,23 @@
+dubbo:
+  scan:
+    # dubbo 服务扫描基准包
+    base-packages: com.haiyang.sca.provider
+  protocol:
+    # dubbo 协议
+    name: dubbo
+    # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
+    port: -1
+  # 挂载到springcloud注册中心
+  registry:
+    address: nacos://113.31.126.180:8848
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 113.31.126.180:8848
+      config:
+        namespace: haiyang
+        server-addr: 113.31.126.180:8848
+        username: nacos
+        password: nacos
