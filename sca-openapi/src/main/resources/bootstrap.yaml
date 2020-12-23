@@ -9,12 +9,15 @@ dubbo:
     subscribed-services: sca-provider
 
 spring:
+  application:
+    name: sca-openapi
   cloud:
     nacos:
       discovery:
         server-addr: 113.31.126.180:8848
       config:
-        namespace: haiyang
         server-addr: 113.31.126.180:8848
         username: nacos
         password: nacos
+        namespace: fc3fddd7-d2ff-4fed-94a9-5cda6e328aa4
+        file-extension: yaml
