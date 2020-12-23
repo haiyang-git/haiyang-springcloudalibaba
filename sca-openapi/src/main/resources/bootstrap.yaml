@@ -4,7 +4,7 @@ dubbo:
     #    timeout: 5000
     protocol:
       name: dubbo
-      port: -1
+      port: 20881
   cloud:
     subscribed-services: sca-provider
 

@@ -34,7 +34,7 @@ public class HelloController {
     }
 
     @GetMapping("/getName")
-    public UserVO getName() {
-        return new UserVO("haiyang", true);
+    public String getName() {
+        return userName;
     }
 }
