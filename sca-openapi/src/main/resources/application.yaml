@@ -1,4 +1,5 @@
 server:
   port: 2022
-
-
+spring:
+  application:
+    name: sca-openapi

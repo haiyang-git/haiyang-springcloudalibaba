@@ -1,4 +1,4 @@
-package com.haiyang.sca.provider.hello;
+package com.haiyang.sca.provider.service.hello;
 
 import com.haiyang.sca.api.IHelloService;
 import org.apache.dubbo.config.annotation.DubboService;

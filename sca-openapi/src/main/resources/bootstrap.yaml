@@ -1,16 +1,18 @@
 dubbo:
+  cloud:
+    # The subscribed services in consumer side
+    subscribed-services: ${provider.application.name}
+  protocols:
+    dubbo:
+      port: -1
   consumer:
     check: false
-    #    timeout: 5000
-    protocol:
-      name: dubbo
-      port: 20881
-  cloud:
-    subscribed-services: sca-provider
+
+provider:
+  application:
+    name: sca-provider
 
 spring:
-  application:
-    name: sca-openapi
   cloud:
     nacos:
       discovery:
@@ -19,5 +21,5 @@ spring:
         server-addr: 113.31.126.180:8848
         username: nacos
         password: nacos
-        namespace: fc3fddd7-d2ff-4fed-94a9-5cda6e328aa4
         file-extension: yaml
+        prefix: sca

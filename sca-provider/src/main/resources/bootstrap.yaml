@@ -1,12 +1,12 @@
 dubbo:
   scan:
     # dubbo 服务扫描基准包
-    base-packages: com.haiyang.sca.provider
+    base-packages: com.haiyang.sca.provider.service
   protocol:
     # dubbo 协议
     name: dubbo
     # dubbo 协议端口（ -1 表示自增端口，从 20880 开始）
-    port: 20880
+    port: -1
   # 挂载到springcloud注册中心
   registry:
     address: nacos://113.31.126.180:8848
@@ -17,7 +17,8 @@ spring:
       discovery:
         server-addr: 113.31.126.180:8848
       config:
-        namespace: fc3fddd7-d2ff-4fed-94a9-5cda6e328aa4
         server-addr: 113.31.126.180:8848
         username: nacos
         password: nacos
+        file-extension: yaml
+        prefix: sca
