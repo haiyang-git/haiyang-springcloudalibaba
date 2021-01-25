@@ -2,7 +2,6 @@ package com.haiyang.sca.openapi.controller;
 
 import com.haiyang.sca.api.IHelloService;
 import com.haiyang.sca.openapi.config.NacosConfig;
-import com.haiyang.sca.openapi.vo.UserVO;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

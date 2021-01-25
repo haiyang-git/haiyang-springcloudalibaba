@@ -1,6 +1,9 @@
 package com.haiyang.sca.openapi.vo;
 
+import lombok.Data;
+
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * @author wanghaiyang
@@ -9,29 +12,41 @@ import java.io.Serializable;
  * @description 用户
  * @createTime 2020年12月18日 14:15:00
  */
+@Data
 public class UserVO implements Serializable {
+    private static final long serialVersionUID = 8581557595007972659L;
+    /**
+     * 主键
+     */
+    private Integer id;
 
-    private String test;
-    private boolean isMyTest;
+    /**
+     * 身份证
+     */
+    private String idCard;
 
-    public String getTest() {
-        return test;
-    }
+    /**
+     * 姓名
+     */
+    private String name;
 
-    public void setTest(String test) {
-        this.test = test;
-    }
+    /**
+     * 手机号
+     */
+    private String mobile;
 
-    public boolean isMyTest() {
-        return isMyTest;
-    }
+    /**
+     * 联系人手机号
+     */
+    private LocalDateTime birthday;
 
-    public void setMyTest(boolean myTest) {
-        isMyTest = myTest;
-    }
+    /**
+     * 性别
+     */
+    private Integer sex;
 
-    public UserVO(String test, boolean isMyTest) {
-        this.test = test;
-        this.isMyTest = isMyTest;
-    }
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createTime;
 }

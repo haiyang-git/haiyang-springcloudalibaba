@@ -11,6 +11,5 @@ import java.util.List;
 public interface UserModel2DTOMapper {
     UserModel2DTOMapper INSTANCE = Mappers.getMapper(UserModel2DTOMapper.class);
 
-    UserDTO toDTO(User user);
     List<UserDTO> toDTO(List<User> user);
 }

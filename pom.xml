@@ -12,6 +12,7 @@
         <module>sca-api</module>
         <module>sca-provider</module>
         <module>sca-openapi</module>
+        <module>sca-generator</module>
     </modules>
 
     <properties>
@@ -20,6 +21,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+        <org.mapstruct.version>1.4.1.Final</org.mapstruct.version>
     </properties>
 
     <dependencies>
@@ -48,6 +50,9 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
+
         </dependencies>
     </dependencyManagement>
 
@@ -71,4 +76,7 @@
             </plugin>
         </plugins>
     </build>
+
+
+
 </project>

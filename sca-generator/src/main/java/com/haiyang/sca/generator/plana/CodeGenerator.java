@@ -1,4 +1,4 @@
-package com.haiyang.sca.provider.generator;
+package com.haiyang.sca.generator.plana;
 
 
 import com.baomidou.mybatisplus.annotation.DbType;
