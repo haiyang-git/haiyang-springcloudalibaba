@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @DubboReference(version = "1.0.0")
+    @DubboReference(version = "1.0.0",timeout = 60000)
     private IUserService userService;
 
     @GetMapping("/getUsers")
