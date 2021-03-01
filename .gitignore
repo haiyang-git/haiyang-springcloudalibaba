@@ -26,3 +26,10 @@ sca-api/*.iml
 sca-consumer/*.iml
 sca-provider/*.iml
 sca-openapi/*.iml
+
+.idea/
+sca-api/target/
+sca-generator/target/
+sca-openapi/target/
+sca-provider/target/
+

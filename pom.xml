@@ -13,6 +13,7 @@
         <module>sca-provider</module>
         <module>sca-openapi</module>
         <module>sca-generator</module>
+        <module>sca-consumer</module>
     </modules>
 
     <properties>
@@ -34,6 +35,7 @@
             <version>1.18.16</version>
             <scope>provided</scope>
         </dependency>
+
 
     </dependencies>
     <dependencyManagement>
